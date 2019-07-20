@@ -55,6 +55,50 @@
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/aditional_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/section_image"
 
+        >
+
+
+        <EditText
+            android:id="@+id/age"
+            android:hint="@string/age_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/street"
+            android:hint="@string/street_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/city"
+            android:hint="@string/city_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:text="@string/register_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aditional_info"
+        />
 
 </RelativeLayout>

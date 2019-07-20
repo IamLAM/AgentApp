@@ -2,4 +2,8 @@
     <string name="app_name">AgentApp</string>
     <string name="name_hint">Name</string>
     <string name="last_name_hint">Last Name</string>
+    <string name="age_hint">Age</string>
+    <string name="street_hint">Street</string>
+    <string name="city_hint">City</string>
+    <string name="register_text">Register</string>
 </resources>
