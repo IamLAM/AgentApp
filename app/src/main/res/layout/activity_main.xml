@@ -21,7 +21,37 @@
 
           />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/people_image"
+        android:layout_alignTop="@id/people_image"
+        android:layout_alignBottom="@id/people_image"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
 
+        >
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+
+            />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name_hint"
+
+            />
+
+
+
+    </LinearLayout>
 
     </RelativeLayout>
 

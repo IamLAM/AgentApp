@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AgentApp</string>
+    <string name="name_hint">Name</string>
+    <string name="last_name_hint">Last Name</string>
 </resources>
