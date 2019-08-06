@@ -56,7 +56,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/aditional_info"
+        android:id="@+id/ad_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -98,7 +98,8 @@
         android:text="@string/register_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/aditional_info"
+       
+        android:layout_below="@id/ad_info"
         />
 
 </RelativeLayout>
