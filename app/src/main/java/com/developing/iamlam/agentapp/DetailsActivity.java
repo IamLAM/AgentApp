@@ -11,9 +11,13 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         Bundle extras=getIntent().getExtras();
-        String name=extras.getString("name");
+        String name=extras.getString(MainActivity.NAME);
+        String last_name=extras.getString(MainActivity.LAST_NAME);
+        Integer age=extras.getInt(MainActivity.AGE);
+        String street=extras.getString(MainActivity.STREET);
+        String city=extras.getString(MainActivity.CITY);
         TextView userInfo=findViewById(R.id.user_info);
 
-        userInfo.setText(name);
+        userInfo.setText(name+last_name+age+street+city);
     }
 }

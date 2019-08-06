@@ -9,6 +9,12 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String NAME = "name";
+    public static final String LAST_NAME = "last_name";
+    public static final String AGE = "age";
+    public static final String STREET = "street";
+    public static final String CITY = "city";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button regButton=findViewById(R.id.register_button);
         final EditText nameEdit=findViewById(R.id.name);
-        EditText lastNameEdit=findViewById(R.id.last_name);
-        EditText ageEdit=findViewById(R.id.age);
-        EditText cityEdit=findViewById(R.id.city);
-        EditText streetEdit=findViewById(R.id.street);
+        final EditText lastNameEdit=findViewById(R.id.last_name);
+        final EditText ageEdit=findViewById(R.id.age);
+        final EditText cityEdit=findViewById(R.id.city);
+        final EditText streetEdit=findViewById(R.id.street);
 
 
 
@@ -31,7 +37,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
             Intent detailIntent=new Intent(MainActivity.this,DetailsActivity.class);
-            detailIntent.putExtra("name",nameEdit.getText().toString());
+            detailIntent.putExtra(NAME,nameEdit.getText().toString());
+            detailIntent.putExtra(LAST_NAME,lastNameEdit.getText().toString());
+            detailIntent.putExtra(AGE,ageEdit.getText().toString());
+            detailIntent.putExtra(STREET,streetEdit.getText().toString());
+            detailIntent.putExtra(CITY,cityEdit.getText().toString());
             startActivity(detailIntent);
 
             }
