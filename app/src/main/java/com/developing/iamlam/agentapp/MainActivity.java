@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button regButton=findViewById(R.id.register_button);
-        EditText nameEdit=findViewById(R.id.name);
+        final EditText nameEdit=findViewById(R.id.name);
         EditText lastNameEdit=findViewById(R.id.last_name);
         EditText ageEdit=findViewById(R.id.age);
         EditText cityEdit=findViewById(R.id.city);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
             Intent detailIntent=new Intent(MainActivity.this,DetailsActivity.class);
+            detailIntent.putExtra("name",nameEdit.getText().toString());
             startActivity(detailIntent);
 
             }
